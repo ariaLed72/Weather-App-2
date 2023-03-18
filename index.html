@@ -11,6 +11,7 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App with Matt</title>
   </head>
@@ -20,10 +21,10 @@
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <div class="overview">
-            <h1>New York, USA</h1>
+            <h1 id="city">New York, USA</h1>
             <ul>
               <li>Friday 05:00</li>
-              <li>Clear</li>
+              <li id="description">Clear</li>
             </ul>
           </div>
           <div class="row">
@@ -44,9 +45,8 @@
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 73%</li>
-                <li>Wind: 2 km/h</li>
+                <li>Humidity: <span id="humidity">73</span>%</li>
+                <li>Wind: <span id="wind">2</span> km/h</li>
               </ul>
             </div>
           </div>
@@ -63,6 +63,7 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"
       ></script>
+      <script src="src/index.js"></script>
     </div>
   </body>
 </html>
